@@ -1,0 +1,82 @@
+/*nav .navbar-nav.navbar_style a{
+    background-color: #fff;
+    font-weight: 700;
+    color: #85807C;
+    margin-bottom: -2px;
+    text-decoration: none;
+}
+nav .navbar-nav > li > a {
+	line-height: 16px;
+	margin-right: 16px;
+	font-size: .72rem;
+	font-family: 'Story Sans',Arial, Helvetica, sans-serif;
+	-moz-border-radius: 3.01px 3.01px 0 0;
+	-webkit-border-radius: 3.01px;
+	border-radius: 3.01px 3.01px 0 0;
+}
+nav .navbar-nav > li > a {
+	border: 1px solid transparent;
+	display: inline-block;
+	text-decoration: none;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+nav .navbar-nav > li{
+	
+    margin-right: 1rem;
+}
+nav .navbar-nav > li > a {
+	
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0,0,0,.5);
+}
+nav .navbar-nav > li > a:hover {
+	
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0,0,0,.5);
+}
+footer{
+    background-color: #343434;
+    padding: 1rem 0rem 1rem 0rem;
+}
+footer ul li
+{
+    list-style: none;
+    padding-top: 0.25rem;
+}
+footer ul li a
+{
+    color: #fff;
+    text-decoration: none;
+}
+footer ul li a:hover
+{
+    color: #ccc;
+    text-decoration: underline;
+}
+#innerNav a.btn.dropdown-toggle
+{
+    color:#06c;
+    font-weight: 600;
+    font-size: 18px;
+}
+#innerNav a.btn.dropdown-toggle:hover
+{
+    color:#1897c9;
+
+}
+.btnr
+{
+    background-color:#E35826;
+}
+.btnr:hover
+{
+    background-color:#e46a3d;
+}
+
+.main-box-categories .list-group .list-group-item
+{
+    padding: 0px;
+    margin-left: 1rem;
+}
