@@ -184,6 +184,7 @@ INSTALLED_APPS = [
     'aldryn_forms.contrib.email_notifications',
     'emailit',
     
+    
 ]
 
 LANGUAGES = (
