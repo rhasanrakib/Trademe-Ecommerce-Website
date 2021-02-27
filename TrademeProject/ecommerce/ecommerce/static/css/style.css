@@ -19,104 +19,151 @@ nav .navbar-nav > li > a {
 	display: inline-block;
 	text-decoration: none;
 }*/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-
 a:hover, a:focus {
-	outline: none;
-	text-decoration: none;
+    outline: none;
+    text-decoration: none;
 }
 
 input:focus, textarea:focus {
-	outline: none !important;
+    outline: none !important;
 }
 
 input:focus, select:focus, textarea:focus, button:focus {
-	outline: none;
+    outline: none;
 }
 
 textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, button:focus, button:active, button:hover, label:focus, .btn:active, .btn.active {
-	outline: 0px !important;
-	-webkit-appearance: none;
-	box-shadow: none !important;
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
 }
-nav .navbar-nav > li{
-	
+
+nav .navbar-nav>li {
     margin-right: 1rem;
 }
-nav .navbar-nav > li > a {
-	
+
+nav .navbar-nav>li>a {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
-nav .navbar-nav > li > a:hover {
-	
+
+nav .navbar-nav>li>a:hover {
     text-decoration: underline;
     font-family: 'Open Sans', sans-serif;
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
-footer{
+
+footer {
     background-color: #343434;
     padding: 1rem 0rem 1rem 0rem;
 }
-footer ul li
-{
+
+footer ul li {
     list-style: none;
     padding-top: 0.25rem;
 }
-footer ul li a
-{
+
+footer ul li a {
     color: #fff;
     text-decoration: none;
 }
-footer ul li a:hover
-{
+
+footer ul li a:hover {
     color: #ccc;
     text-decoration: underline;
 }
-#innerNav a.btn.dropdown-toggle
-{
-    color:#06c;
+
+#innerNav a.btn.dropdown-toggle {
+    color: #06c;
     font-weight: 600;
     font-size: 18px;
 }
-#innerNav a.btn.dropdown-toggle:hover
-{
-    color:#1897c9;
 
-}
-.btnr
-{
-    background-color:#E35826;
-}
-.btnr:hover
-{
-    background-color:#e46a3d;
+#innerNav a.btn.dropdown-toggle:hover {
+    color: #1897c9;
 }
 
-.main-box-categories .list-group .list-group-item
-{
+.btnr {
+    background-color: #E35826;
+}
+
+.btnr:hover {
+    background-color: #e46a3d;
+}
+
+.main-box-categories .list-group .list-group-item {
     padding: 0px;
     margin-left: 1rem;
 }
+
 /**************************/
-.col-md-3{
+
+.col-md-3 {
     display: inline-block;
-    margin-left:-4px;
-  }
-  .col-md-3 img{
-    width:100%;
-    height:auto;
-  }
-  body .carousel-indicators li{
+    margin-left: -4px;
+}
+
+.col-md-3 img {
+    width: 100%;
+    height: auto;
+}
+
+body .carousel-indicators li {
     display: none;
-  }
-  body .carousel-control-prev-icon,
-  body .carousel-control-next-icon{
-    background-color:red;
-  }
-  body .no-padding{
+}
+
+body .carousel-control-prev-icon {
+    margin-left: -100%;
+}
+
+body .carousel-control-next-icon {
+    margin-right: -100%;
+}
+
+body .carousel-control-prev-icon, body .carousel-control-next-icon {
+    background-color: red;
+}
+
+body .no-padding {
     padding-left: 0;
     padding-right: 0;
-  }
+}
+
+a .card .card-body {
+    background: #F8F8F8;
+}
+
+a .card .card-body p {
+    padding: 0;
+    margin: 0;
+    color: #525252;
+}
+
+#formSingle #logo {
+    float: right;
+}
+
+#holidayHouses #logo {
+    float: right;
+}
+
+.sprite {
+    width: 139px !important;
+    height: 30px;
+    background-position: 0 -200px !important;
+    text-indent: -1000px;
+    overflow: hidden;
+    display: inline-block;
+    background: url("/static/images/fso_sprite.png") top left no-repeat;
+}
+.find-some-one-bg-full
+{
+    background: url(/static/images/bc_landing_young_adult.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

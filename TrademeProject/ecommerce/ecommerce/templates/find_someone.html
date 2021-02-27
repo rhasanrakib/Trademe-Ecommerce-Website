@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load static %}
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+<div class="container-fluid">
+	<div class="row">
+		<div class="col text-center" style="background-color: #43636F;">
+			<div class="sprite" style="width: 100%;">
+				find someone
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row" style="height: 100vh;">
+		<div class="col text-center find-some-one-bg-full">
+			<h1>New Zealand's smart way to date.</h1>
+		</div>
+	</div>
+</div>
+{% placeholder "content" or %}
+
+{%endplaceholder%}
+{% endblock content %}

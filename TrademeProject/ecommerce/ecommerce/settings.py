@@ -178,13 +178,7 @@ INSTALLED_APPS = [
     'djangocms_style',
     'djangocms_googlemap',
     'djangocms_video',
-    'ecommerce',
-    'absolute',
-    'aldryn_forms',
-    'aldryn_forms.contrib.email_notifications',
-    'emailit',
-    
-    
+    'ecommerce',    
 ]
 
 LANGUAGES = (
@@ -213,6 +207,8 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
+    ('find_someone.html', 'FindSomeone'),
+    ('product_list_nav.html', 'ProductListNav'),
     
 )
 
