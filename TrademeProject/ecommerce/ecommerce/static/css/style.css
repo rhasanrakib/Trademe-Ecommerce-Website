@@ -1,29 +1,12 @@
-/*nav .navbar-nav.navbar_style a{
-    background-color: #fff;
-    font-weight: 700;
-    color: #85807C;
-    margin-bottom: -2px;
-    text-decoration: none;
-}
-nav .navbar-nav > li > a {
-	line-height: 16px;
-	margin-right: 16px;
-	font-size: .72rem;
-	font-family: 'Story Sans',Arial, Helvetica, sans-serif;
-	-moz-border-radius: 3.01px 3.01px 0 0;
-	-webkit-border-radius: 3.01px;
-	border-radius: 3.01px 3.01px 0 0;
-}
-nav .navbar-nav > li > a {
-	border: 1px solid transparent;
-	display: inline-block;
-	text-decoration: none;
-}*/
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 a:hover, a:focus {
     outline: none;
     text-decoration: none;
+}
+
+input[type=range]::-moz-focus-outer {
+    border: 0;
+    outline: none;
 }
 
 input:focus, textarea:focus {
@@ -159,11 +142,68 @@ a .card .card-body p {
     display: inline-block;
     background: url("/static/images/fso_sprite.png") top left no-repeat;
 }
-.find-some-one-bg-full
-{
-    background: url(/static/images/bc_landing_young_adult.jpg) no-repeat center center; 
+
+.find-some-one-bg-full {
+    background: url(/static/images/bc_landing_young_adult.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+/*--- /.price-range-slider ---*/
+
+#rangeBox {
+    /* carry complete  range box*/
+    width: 300px;
+    height: 100px;
+}
+
+#sliderBox {
+    position: relative;
+    top: 0%;
+    width: 300px;
+    /*2x width*/
+}
+
+#slider0to50 {
+    width: 150px;
+    position: absolute;
+    left: 0%;
+}
+
+#slider51to100 {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+}
+
+#inputRange {
+    position: relative;
+    top: 50%;
+}
+
+#inputRange::after {
+    content: "";
+    clear: both;
+    display: block
+}
+
+#inputRange #min {
+    width: 40%;
+    float: left;
+}
+
+#inputRange #max {
+    width: 40%;
+    float: right;
+}
+
+/*--- /.price-range-slider ---*/
+.form-text
+{
+    size: 1rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: #525252;
 }

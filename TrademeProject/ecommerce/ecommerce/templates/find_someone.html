@@ -4,6 +4,7 @@
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
 {% block content %}
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="col text-center" style="background-color: #43636F;">
@@ -16,10 +17,156 @@
 <div class="container-fluid">
 	<div class="row" style="height: 100vh;">
 		<div class="col text-center find-some-one-bg-full">
-			<h1>New Zealand's smart way to date.</h1>
+			<div class="text-center mt-5">
+				<h1 style="color: #fff;">New Zealand's smart way to date.</h1>
+
+				<a href="#" class="btn btn-primary">Join For Free</a>
+				<br>
+				<br>
+				<a href="#" class="btn btn-light">Login</a>
+
+			</div>
 		</div>
 	</div>
 </div>
+<div class="container-fluid" style="background-color: #F5F5F5;">
+	<div class="row ">
+		<div class="col-md-5 offset-md-1 mt-5">
+			<span>Why joining FindSomeone is the smart way to date:</span>
+			<ul style="line-height: 2rem;">
+				<li>We screen all members to check they're the real deal</li>
+				<li>400,000+ members means you’re spoilt for choice</li>
+				<li>With 14 years of matching people all around NZ we know what we're doing</li>
+				<li>Upgrade to Gold Membership when you want to get more serious</li>
+			</ul>
+		</div>
+		<div class="col-md-5 offset-md-1 mt-5">
+			<div class="px-5 py-2">
+				Join FindSomeone for free!
+				<br>
+				<small>Sign up faster. We will never post to Facebook.</small>
+				<a href="#" class="btn btn-primary mt-2">Connect with Facebook</a>
+				<hr>
+				<a href="#" class="btn btn-primary">Join For Free</a>
+				<br>
+				<br>
+				<a href="#" class="btn btn-light border">Login</a>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid mt-3 d-flex justify-content-center">
+
+	<div class="card p-1 border-0" style="width: 22rem;">
+
+		<div class="row">
+			<div class="col text-center mt-5">
+				There are 527,285 New Zealanders looking for their someone
+			</div>
+		</div>
+		<div class="row">
+			<div class="col mt-3">
+				<span class="form-text">See who's looking</span>
+				
+				I'm a
+				<br>
+				<div class="btn btn-light border self-select">Woman</div>
+				<div class="btn btn-light border self-select">Man</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col mt-3">
+				<span class="form-text">Looking for a <small>(select at least one)</small></span>
+				
+				<div class="btn btn-primary border looking-select">Woman</div>
+				<div class="btn btn-light border looking-select">Man</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col mt-3">
+				<span class="form-text">Aged</span>
+				<div id="rangeBox">
+					<div id="sliderBox">
+
+						<input type="range" class="form-range" id="slider0to50" step="1" min="18" max="50">
+						<input type="range" class="form-range" id="slider51to100" step="1" min="51" max="99">
+					</div>
+					<div id="inputRange">
+						<input type="number" class="form-control" step="1" min="18" max="50" placeholder="Min" id="min">
+						<input type="number" class="form-control" step="1" min="51" max="99" placeholder="Max" id="max">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<span class="form-text">From</span>
+				<select class="form-control" name="area" id="area-select">
+					<option value="1">All of New Zealand</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	var elements = document.getElementsByClassName("self-select");
+	for (var i = 0; i < elements.length; i++) {
+		elements[i].onclick = function () {
+
+			// remove class from sibling
+
+			var el = elements[0];
+			while (el) {
+				if (el.tagName === "DIV") {
+					//remove class
+					el.classList.remove("btn-primary");
+
+				}
+				// pass to the new sibling
+				el = el.nextSibling;
+			}
+			this.classList.remove("btn-light");
+			this.classList.add("btn-primary");
+		};
+	}
+	$('.looking-select').on("click", function () {
+		$(this).toggleClass('btn-primary');
+		$(this).toggleClass('btn-light');
+	})
+	//-----JS for Price Range slider-----
+	var sliderLeft = document.getElementById("slider0to50");
+	var sliderRight = document.getElementById("slider51to100");
+	var inputMin = document.getElementById("min");
+	var inputMax = document.getElementById("max");
+
+	///value updation from input to slider
+	//function input update to slider
+	function sliderLeftInput() {//input udate slider left
+		sliderLeft.value = inputMin.value;
+	}
+	function sliderRightInput() {//input update slider right
+		sliderRight.value = (inputMax.value);//chnage in input max updated in slider right
+	}
+
+	//calling function on change of inputs to update in slider
+	inputMin.addEventListener("change", sliderLeftInput);
+	inputMax.addEventListener("change", sliderRightInput);
+
+
+	///value updation from slider to input
+	//functions to update from slider to inputs 
+	function inputMinSliderLeft() {//slider update inputs
+		inputMin.value = sliderLeft.value;
+	}
+	function inputMaxSliderRight() {//slider update inputs
+		inputMax.value = sliderRight.value;
+	}
+	sliderLeft.addEventListener("change", inputMinSliderLeft);
+	sliderRight.addEventListener("change", inputMaxSliderRight);
+
+</script>
+
 {% placeholder "content" or %}
 
 {%endplaceholder%}
