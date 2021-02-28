@@ -209,6 +209,7 @@ CMS_TEMPLATES = (
     ('fullwidth.html', 'Fullwidth'),
     ('find_someone.html', 'FindSomeone'),
     ('product_list_nav.html', 'ProductListNav'),
+    ('items_list.html', 'ItemList'),
     
 )
 

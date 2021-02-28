@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load static %}
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text" style="color: #D07317;">
+                        Buying
+                    </p>
+                    <a href="#" class="card-link">Watchlist</a>
+                    <br>
+                    <a href="#" class="card-link">Items I won</a>
+                    <br>
+                    <a href="#" class="card-link">Items I lost</a>
+                    <br>
+                    <a href="#" class="card-link">My favourites</a>
+                    <br>
+                    <a href="#" class="card-link">Recently viewed</a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text" style="color: #D07317;">
+                        Selling
+                    </p>
+                    <a href="#" class="card-link">List an item</a>
+                    <br>
+                    <a href="#" class="card-link">Items I'm selling</a>
+                    <br>
+                    <a href="#" class="card-link">Sold items</a>
+                    <br>
+                    <a href="#" class="card-link">Unsold items</a>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="card border-0 mt-2">
+
+                <div class="card-body">
+                    <p class="card-text"><strong>{% page_attribute "page_title" %}</strong></p>
+
+                </div>
+            </div>
+            <div class="card mt-2">
+
+                <div class="card-body">
+                    <p class="card-text"> See listings from</p>
+                    <button class="btn btn-light border">Anywhere</button>
+                    <button class="btn btn-light border">New Zealand only</button>
+                    <select name="" id="" class="btn btn-light border">
+                        <option value="1">New Zealand</option>
+                    </select>
+                    <select class="btn btn-light border" name="" id="">
+                        <option value="1">All district</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <a href="card-link"> Advertising <small class="text-muted">(596)</small></a>
+                        </div>
+                        <div class="col">
+                            <a href="card-link"> Advertising <small class="text-muted">(596)</small></a>
+                        </div>
+                        <div class="col">
+                            <a href="card-link"> Advertising <small class="text-muted">(596)</small></a>
+                        </div>
+                    </div>
+            
+                    
+                </div>
+            </div>
+            <div class="card mt-2">
+
+                <div class="card-body">
+                    <p class="card-text"> See listings from</p>
+                    <button class="btn btn-light border">Anywhere</button>
+                    <button class="btn btn-light border">New Zealand only</button>
+                    <select name="" id="" class="btn btn-light border">
+                        <option value="1">New Zealand</option>
+                    </select>
+                    <select class="btn btn-light border" name="" id="">
+                        <option value="1">All district</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% placeholder "content" or %}
+
+{%endplaceholder%}
+{% endblock content %}
